@@ -1,0 +1,23 @@
+.heading {
+  text-align: center;
+}
+.heading > svg {
+  margin-right: 10px;
+  padding-right: 10px;
+  animation: wave-effect 2s 1s infinite;
+}
+p {
+  text-align: center;
+}
+
+@keyframes wave-effect {
+  20% {
+    rotate: 0deg 0;
+  }
+  50% {
+    rotate: 80deg 0;
+  }
+  100% {
+    rotate: 0deg 0;
+  }
+}

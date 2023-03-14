@@ -1,0 +1,41 @@
+.navbar {
+  padding: 20px;
+  position: relative;
+}
+.hamburger > svg {
+  width: 30px;
+  height: 30px;
+}
+
+.navContainer {
+  padding: 20px;
+  transition: 0.3s top;
+  background-color: var(--background-color2);
+  width: calc(100% - 40spx);
+  height: 50vh;
+  position: absolute;
+  inset: 0;
+  top: -500%;
+  z-index: 1;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.listItem {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.listItem > a {
+  text-decoration: none;
+  color: var(--white-color);
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: var(--font-bold);
+}
+
+.links {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}

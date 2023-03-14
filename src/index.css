@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color: #111827;
+  --background-color2: #1e293b;
+  --white-color: #fff;
+  --accent-color: #2c66c3;
+  --job-title-color: #2cb67d;
+  --accent-shadow: 0px 0px 14px rgba(44, 102, 195, 0.5);
+  --accent-shadow-extended: 0px 0px 24px rgba(44, 102, 195, 0.7);
+  --font-family: "Roboto", sans-serif;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--white-color);
+  font-family: var(--font-family);
+}
+
+.landing {
+  height: 100dvh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job-title {
+  color: var(--job-title-color);
+}
+
+.title {
+  position: relative;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 124px;
+  height: 10px;
+  background-color: var(--accent-color);
+  top: 110%;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  box-shadow: var(--accent-shadow);
+  border-radius: 50px;
+}
+
+.btn {
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin-bottom: 3rem;
+  width: 70px;
+  height: 50px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  animation: box-shadow-extend 2s 1s infinite;
+  box-shadow: var(--accent-shadow);
+  margin-inline: auto;
+}
+
+@keyframes box-shadow-extend {
+  0% {
+    box-shadow: var(--accent-shadow);
+  }
+  50% {
+    box-shadow: var(--accent-shadow-extended);
+  }
+  100% {
+    box-shadow: var(--accent-shadow);
+  }
+}
