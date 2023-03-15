@@ -5,14 +5,14 @@ export const navbarData = [
   },
   {
     name: "projects",
-    link: "#",
+    link: "#projects-landing",
   },
   {
     name: "skills",
-    link: "#",
+    link: "#skills-landing",
   },
   {
     name: "contact",
-    link: "#",
+    link: "#contact-landing",
   },
 ];

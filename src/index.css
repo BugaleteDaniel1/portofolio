@@ -22,11 +22,19 @@ body {
   --font-light: 300;
   --font-regular: 400;
   --font-bold: 700;
+  scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
 body {
   background-color: var(--background-color);
   color: var(--white-color);
   font-family: var(--font-family);
+  letter-spacing: 1.5px;
 }
 
 .landing {
@@ -45,6 +53,7 @@ body {
   position: relative;
   color: var(--white-color);
   text-align: center;
+  margin-block: 4rem;
 }
 
 .title::after {
@@ -63,8 +72,6 @@ body {
 
 .btn {
   border-radius: 50px;
-  outline: none;
-  border: none;
   margin-bottom: 3rem;
   width: 70px;
   height: 50px;
@@ -73,6 +80,9 @@ body {
   animation: box-shadow-extend 2s 1s infinite;
   box-shadow: var(--accent-shadow);
   margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes box-shadow-extend {
@@ -85,4 +95,11 @@ body {
   100% {
     box-shadow: var(--accent-shadow);
   }
+}
+.app {
+  position: relative;
+}
+
+.projects {
+  position: relative;
 }

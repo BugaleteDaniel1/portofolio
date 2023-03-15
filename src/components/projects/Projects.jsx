@@ -1,13 +1,33 @@
 import { Cards } from "./Cards";
 import { projectsData } from "../../assets/data/projectsData";
+import { Backdrop } from "../Backdrop";
 
-export const Projects = () => {
+export const Projects = ({
+  clickCard,
+  backdropState,
+  backdropData,
+  closeBackdrop,
+}) => {
   return (
-    <>
-      <h2 className="title">Projects</h2>
+    <section className="projects">
+      <Backdrop
+        modalState={backdropState}
+        modalData={backdropData}
+        closeModal={closeBackdrop}
+      />
+      <h2 id="projects-landing" className="title">
+        Projects
+      </h2>
       {projectsData.map((site) => {
-        return <Cards name={site.projectName} img={site.projectImage} />;
+        return (
+          <Cards
+            pressCard={clickCard}
+            key={site.projectName}
+            name={site.projectName}
+            img={site.projectImage}
+          />
+        );
       })}
-    </>
+    </section>
   );
 };

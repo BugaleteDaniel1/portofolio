@@ -5,12 +5,13 @@ import {
   FaCss3Alt,
   FaGitAlt,
   FaGithub,
+  FaPhp,
 } from "react-icons/fa";
-import { SiReactrouter } from "react-icons/si";
+import { SiReactrouter, SiMysql } from "react-icons/si";
 
 export const skills = [
   {
-    icon: <FaReact />,
+    icon: <FaReact color="#90deea" />,
     name: "react",
   },
   {
@@ -18,23 +19,31 @@ export const skills = [
     name: "React-router",
   },
   {
-    icon: <FaJsSquare />,
+    icon: <FaJsSquare color="#FFD600" />,
     name: "javascript",
   },
   {
-    icon: <FaHtml5 />,
+    icon: <FaHtml5 color="E65100" />,
     name: "HTML 5",
   },
   {
-    icon: <FaCss3Alt />,
+    icon: <FaCss3Alt color="#0277BD" />,
     name: "CSS 3",
   },
   {
-    icon: <FaGitAlt />,
+    icon: <FaGitAlt color="#F4511E" />,
     name: "Git",
   },
   {
     icon: <FaGithub />,
     name: "Github",
+  },
+  {
+    icon: <FaPhp color="#E0E0E0" />,
+    name: "Php",
+  },
+  {
+    icon: <SiMysql />,
+    name: "MySql",
   },
 ];

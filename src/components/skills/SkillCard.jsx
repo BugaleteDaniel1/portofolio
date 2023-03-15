@@ -1,9 +1,8 @@
 import skillCardCss from "../../styles/skills/skills.module.css";
 
 export const SkillCard = ({ skillName, skillIcon }) => {
-  console.log(skillName, skillIcon);
   return (
-    <div className={skillCardCss.card} key={skillIcon}>
+    <div className={skillCardCss.card}>
       {skillIcon}
       <p>{skillName}</p>
     </div>

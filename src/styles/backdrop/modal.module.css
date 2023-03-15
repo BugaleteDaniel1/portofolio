@@ -1,0 +1,31 @@
+.modal {
+  background-color: var(--background-color2);
+  position: absolute;
+  inset: 0;
+  margin: 60% 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.img {
+  width: 90%;
+  object-fit: cover;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  background-color: var(--background-color);
+  padding: 10px 50px;
+}
+
+.btn > svg {
+  margin-inline: 5px;
+}

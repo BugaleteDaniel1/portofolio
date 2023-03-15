@@ -2,9 +2,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import NavCss from "../styles/navbar/navbar.module.css";
 import { navbarData } from "../assets/data/navbarData";
 import { useEffect, useRef } from "react";
-export const Navbar = ({ navState, clickHandler }) => {
-  console.log(navState);
 
+export const Navbar = ({ navState, clickHandler }) => {
   const nav = useRef(null);
   const navWrapper = useRef(null);
 
@@ -30,7 +29,7 @@ export const Navbar = ({ navState, clickHandler }) => {
           <ul className={NavCss.links}>
             {navbarData.map((navEl) => {
               return (
-                <li className={NavCss.listItem}>
+                <li key={navEl.name} className={NavCss.listItem}>
                   <a href={navEl.link}>{navEl.name}</a>
                 </li>
               );

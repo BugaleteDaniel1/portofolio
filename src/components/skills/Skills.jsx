@@ -1,20 +1,20 @@
 import { skills } from "../../assets/data/skillsData";
 import { SkillCard } from "./SkillCard";
+import skillsCss from "../../styles/skills/skills.module.css";
 
 export const Skills = () => {
   return (
     <>
-      <h2 className="title">Skills</h2>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gap: "10px",
-          marginTop: "10px",
-        }}
-      >
+      <h2 id="skills-landing" className="title">
+        Skills
+      </h2>
+      <div className={skillsCss.wrapper}>
         {skills.map((skill) => (
-          <SkillCard skillName={skill.name} skillIcon={skill.icon} />
+          <SkillCard
+            key={skill.name}
+            skillName={skill.name}
+            skillIcon={skill.icon}
+          />
         ))}
       </div>
     </>
