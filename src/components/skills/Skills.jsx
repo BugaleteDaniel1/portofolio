@@ -1,6 +1,6 @@
 import { skills } from "../../assets/data/skillsData";
 import { SkillCard } from "./SkillCard";
-import skillsCss from "../../styles/skills/skills.module.css";
+import SkillsCss from "../../styles/skills/skills.module.css";
 
 export const Skills = () => {
   return (
@@ -8,7 +8,7 @@ export const Skills = () => {
       <h2 id="skills-landing" className="title">
         Skills
       </h2>
-      <div className={skillsCss.wrapper}>
+      <div className={SkillsCss.wrapper}>
         {skills.map((skill) => (
           <SkillCard
             key={skill.name}

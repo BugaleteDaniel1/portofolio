@@ -3,7 +3,7 @@ import { Banner } from "./components/Banner";
 import { Contact } from "./components/Contact";
 import { Navbar } from "./components/Navbar";
 import { Projects } from "./components/projects/Projects";
-import { Skills } from "./components/skills/skills";
+import { Skills } from "./components/skills/Skills";
 import { Title } from "./components/Title";
 import { projectsData } from "./assets/data/projectsData";
 
