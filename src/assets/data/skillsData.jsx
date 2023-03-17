@@ -7,17 +7,17 @@ import {
   FaGithub,
   FaPhp,
 } from "react-icons/fa";
-import { SiReactrouter, SiMysql } from "react-icons/si";
+// import { SiReactrouter, SiMysql } from "react-icons/si";
 
 export const skills = [
   {
     icon: <FaReact color="#90deea" />,
     name: "react",
   },
-  {
-    icon: <SiReactrouter />,
-    name: "React-router",
-  },
+  // {
+  //   icon: <SiReactrouter />,
+  //   name: "React-router",
+  // },
   {
     icon: <FaJsSquare color="#FFD600" />,
     name: "javascript",
@@ -42,8 +42,8 @@ export const skills = [
     icon: <FaPhp color="#E0E0E0" />,
     name: "Php",
   },
-  {
-    icon: <SiMysql />,
-    name: "MySql",
-  },
+  // {
+  //   icon: <SiMysql />,
+  //   name: "MySql",
+  // },
 ];
