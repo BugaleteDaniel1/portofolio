@@ -41,7 +41,7 @@ body {
 }
 
 .landing {
-  height: 100dvh;
+  height: 100svh;
   height: 100vh;
   display: flex;
   flex-direction: column;
