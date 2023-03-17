@@ -34,9 +34,15 @@ function App() {
   return (
     <div className="app">
       <div className="landing">
-        <Navbar navState={isActive} clickHandler={navHandler} />
-        <Title />
-        <Banner />
+        <Navbar
+          changeNavState={setIsActive}
+          navState={isActive}
+          clickHandler={navHandler}
+        />
+        <div className="hero">
+          <Title />
+          <Banner />
+        </div>
         <a href="#projects-landing" className="btn">
           Start
         </a>

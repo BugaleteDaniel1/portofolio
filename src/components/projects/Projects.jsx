@@ -18,16 +18,18 @@ export const Projects = ({
       <h2 id="projects-landing" className="title">
         Projects
       </h2>
-      {projectsData.map((site) => {
-        return (
-          <Cards
-            pressCard={clickCard}
-            key={site.projectName}
-            name={site.projectName}
-            img={site.projectImage}
-          />
-        );
-      })}
+      <div className="cards-wrapper">
+        {projectsData.map((site) => {
+          return (
+            <Cards
+              pressCard={clickCard}
+              key={site.projectName}
+              name={site.projectName}
+              img={site.projectImage}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 };

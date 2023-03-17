@@ -2,7 +2,7 @@
   background-color: var(--background-color2);
   position: absolute;
   inset: 0;
-  margin: 60% 50px;
+  margin: 50% 50px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -28,4 +28,21 @@
 
 .btn > svg {
   margin-inline: 5px;
+}
+@media (min-width: 768px) {
+  .modal {
+    margin: 35% 10%;
+  }
+  .btnContainer {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    margin: 0;
+  }
+  .img {
+    width: 50%;
+  }
 }

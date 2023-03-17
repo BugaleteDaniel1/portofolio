@@ -24,6 +24,9 @@ body {
   --font-bold: 700;
   scroll-behavior: smooth;
 }
+ul {
+  margin: 0;
+}
 
 a {
   text-decoration: none;
@@ -102,4 +105,42 @@ body {
 
 .projects {
   position: relative;
+}
+.cards-wrapper {
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .job-title {
+    font-size: 1.7rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .landing > .btn {
+    width: 100px;
+    height: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    display: none;
+  }
+  .cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-inline: auto;
+    width: 60%;
+  }
+  .title {
+    margin-bottom: 6rem;
+  }
 }
